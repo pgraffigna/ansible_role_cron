@@ -1,0 +1,6 @@
+---
+- hosts: lubuntu
+  become: yes
+
+  roles:
+    - cron

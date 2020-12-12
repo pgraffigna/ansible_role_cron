@@ -1,0 +1,7 @@
+---
+- name: cronjob
+  cron:
+    name: ansible_job
+    user: "{{ usuario }}"
+    minute: "*/10"
+    job: date > $HOME/fecha
